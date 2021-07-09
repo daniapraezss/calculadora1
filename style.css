@@ -1,0 +1,100 @@
+h1 {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 25px;
+    padding: 5px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+}
+    .elegantshadow {
+      color: indianred;
+      letter-spacing: .15em;
+      text-shadow: 
+        1px -1px 0 antiquewhite, 
+        -1px 2px 1px antiquewhite, 
+        -2px 4px 1px antiquewhite, 
+        -3px 6px 1px antiquewhite, 
+        -4px 8px 1px antiquewhite, 
+        -5px 10px 1px antiquewhite, 
+        -6px 12px 1px antiquewhite, 
+        -7px 14px 1px antiquewhite, 
+        -8px 16px 1px antiquewhite, 
+        -9px 18px 1px antiquewhite;
+       
+        
+    }
+
+
+
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+.calculadora{
+   
+        
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: monospace;
+      
+}
+.calculadora-input input {
+    background: transparent;
+    border: none;
+    outline: none;
+    
+    width: 99%;
+    border-bottom: 2px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: right;
+    font-size: 60px;
+  }
+
+  .calculatora-input input:focus {
+    background: white;
+  }
+
+  .calc-button {
+    background: bisque;
+    border: 1px solid black;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease background;
+    border-radius: 3px;
+    font-size: 18px;
+    color: black;
+    box-shadow: 0px 0px 5px 2px #ff9494;
+  }
+  .calc-button:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .calculadora-buttons {
+    padding: 20px;
+    
+    /* css grid stuff goes here */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+  }
+  .suma, .igual{
+    grid-row: span 2;
+  }
+
+  .cero{
+    grid-column: span 2;
+  }
+
+  .borrar, .multiplicar, .suma, .dividir, .punto, .restar, .igual{
+    background:indianred;
+    box-shadow: 0px 0px 5px 2px #ff9494;
+  }
+  
+  .calculadora-buttons{
+    background: antiquewhite;
+  }
